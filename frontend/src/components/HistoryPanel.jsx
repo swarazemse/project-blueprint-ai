@@ -8,7 +8,7 @@ function HistoryPanel() {
     useEffect(() => {
 
         axios
-            .get("https://project-blueprint-ai-production.up.railway.app/analysis-history")
+            .get("https://your-railway-backend.up.railway.app/analysis-history")
             .then((response) => {
                 setHistory(response.data);
             });
