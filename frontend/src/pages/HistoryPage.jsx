@@ -23,6 +23,17 @@ function HistoryPage() {
 
         setProjects(response.data);
     };
+      const renderBulletList = (content) => {
+    if (!content) return <p>No data available</p>;
+
+    return (
+        <ul>
+            {content.split(";").map((item, index) => (
+                <li key={index}>{item.trim()}</li>
+            ))}
+        </ul>
+    );
+};
 
     return (
 
