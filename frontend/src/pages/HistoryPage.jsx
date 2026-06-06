@@ -18,7 +18,7 @@ function HistoryPage() {
 
         const response =
             await axios.get(
-                "http://localhost:8000/analysis-history"
+                "https://project-blueprint-ai-production.up.railway.app/analysis-history"
             );
 
         setProjects(response.data);
