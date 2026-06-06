@@ -86,7 +86,7 @@ function HistoryPage() {
                         <h2>{selectedProject.project_name}</h2>
 
                         <p className="summary">
-                        {selectedProject.project_summary}
+                            {renderBulletList(selectedProject.project_summary)}
                         </p>
 
                         <hr />
@@ -94,55 +94,55 @@ function HistoryPage() {
                         {/* FEASIBILITY */}
                         <div className="section">
                         <h3>Feasibility Analysis</h3>
-                        <p>{selectedProject.feasibility_analysis}</p>
+                        <p>{renderBulletList(selectedProject.feasibility_analysis)}</p>
                         </div>
 
                         {/* TECH STACK */}
                         <div className="section">
                         <h3>Tech Stack</h3>
-                        <p>{selectedProject.recommended_tech_stack}</p>
+                        <p>{renderBulletList(selectedProject.recommended_tech_stack)}</p>
                         </div>
 
                         {/* ARCHITECTURE */}
                         <div className="section">
                         <h3>Architecture</h3>
-                        <p>{selectedProject.architecture}</p>
+                        <p>{renderBulletList(selectedProject.architecture)}</p>
                         </div>
 
                         {/* DATABASE */}
                         <div className="section">
                         <h3>Database Schema</h3>
-                        <p>{selectedProject.database_schema}</p>
+                        <p>{renderBulletList(selectedProject.database_schema)}</p>
                         </div>
 
                         {/* API */}
                         <div className="section">
                         <h3>API Design</h3>
-                        <p>{selectedProject.api_design}</p>
+                        <p>{renderBulletList(selectedProject.api_design)}</p>
                         </div>
 
                         {/* USER STORIES */}
                         <div className="section">
                         <h3>User Stories</h3>
-                        <p>{selectedProject.user_stories}</p>
+                        <p>{renderBulletList(selectedProject.user_stories)}</p>
                         </div>
 
                         {/* TEAM */}
                         <div className="section">
                         <h3>Team Recommendation</h3>
-                        <p>{selectedProject.team_recommendation}</p>
+                        <p>{renderBulletList(selectedProject.team_recommendation)}</p>
                         </div>
 
                         {/* TIMELINE */}
                         <div className="section">
                         <h3>Timeline</h3>
-                        <p>{selectedProject.timeline}</p>
+                        <p>{renderBulletList(selectedProject.timeline)}</p>
                         </div>
 
                         {/* SCALABILITY */}
                         <div className="section">
                         <h3>Scalability Recommendations</h3>
-                        <p>{selectedProject.scalability_recommendations}</p>
+                        <p>{renderBulletList(selectedProject.scalability_recommendations)}</p>
                         </div>
 
                         {/* SCORES GRID */}
