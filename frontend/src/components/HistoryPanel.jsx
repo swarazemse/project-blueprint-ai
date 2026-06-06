@@ -8,7 +8,7 @@ function HistoryPanel() {
     useEffect(() => {
 
         axios
-            .get("http://localhost:8000/analysis-history")
+            .get("https://project-blueprint-ai-production.up.railway.app/analysis-history")
             .then((response) => {
                 setHistory(response.data);
             });
