@@ -13,7 +13,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/history" element={<HistoryPage />} />
+        <Route path="/analysis-history" element={<HistoryPage />} />
       </Routes>
     </>
   );
